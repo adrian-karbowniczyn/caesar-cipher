@@ -82,3 +82,30 @@ input:focus {
     color: $error-color;
   }
 }
+
+@media (max-width: 1024px) {
+  .papirus-bg {
+    width: 1650px;
+  }
+  .header__title {
+    font-size: 10rem;
+  }
+
+  .cryptography-form {
+    padding-top: 30px;
+    &__input {
+      width: 70vw;
+    }
+    &__input,
+    &__submit {
+      font-size: 3.5rem;
+    }
+  }
+
+  .cryptography-output {
+    &__encrypted-message,
+    &__error-message {
+      font-size: 4rem;
+    }
+  }
+}
