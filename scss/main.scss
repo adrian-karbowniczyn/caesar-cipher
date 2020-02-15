@@ -17,6 +17,11 @@ body {
   overflow: hidden;
 }
 
+input:focus {
+  outline: none;
+  border-color: $accent-color;
+}
+
 .wrapper {
   z-index: 1;
 }
