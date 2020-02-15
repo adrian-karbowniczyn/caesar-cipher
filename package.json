@@ -1,0 +1,40 @@
+{
+  "name": "caesars-cipher",
+  "version": "1.0.0",
+  "description": "Practical project from Opanuj Javascript course, the project is about creating Caesar's cipher(ROT13)",
+  "main": "app.js",
+  "scripts": {
+    "cleanup": "rm -rf dist && rm -rf .cache",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "dev:serve": "npm run cleanup && parcel index.html --port 5555",
+    "dev:build": "npm run cleanup && parcel build index.html"
+  },
+  "keywords": [
+    "js",
+    "caesar",
+    "cipher",
+    "encryption",
+    "challenge",
+    "exercise"
+  ],
+  "author": "Adrian Karbowniczyn",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^25.1.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.19.1",
+    "sass": "^1.25.0"
+  }
+}
