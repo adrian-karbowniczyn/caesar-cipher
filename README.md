@@ -26,6 +26,8 @@ Caesar's code by using a **ROT13**
     cipher: vYbirUvxvat
 
 ## Preview
+**Live GH-pages: https://adrian-karbowniczyn.github.io/caesar-cipher/**
+
 
 ![Caesar code demo](_preview.gif)
 
