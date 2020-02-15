@@ -9,4 +9,14 @@ submitButton.addEventListener('click', event => {
   event.preventDefault();
   outputMessage.textContent = '';
   errorMessage.textContent = '';
+
+  try {
+    outputMessage.textContent = caesar13(textInput.value);
+    textInput.value = '';
+  } catch (error) {
+    console.log(`${error.name}: ${error.message}`);
+    if (error.name === 'Validation error') {
+      errorMessage.textContent = 'Caesar is dissatisfied with your actions';
+    }
+  }
 });
