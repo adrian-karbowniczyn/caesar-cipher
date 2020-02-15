@@ -8,7 +8,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "dev:serve": "npm run cleanup && parcel index.html --port 5555",
-    "dev:build": "npm run cleanup && parcel build index.html"
+    "dev:build": "npm run cleanup && parcel build index.html --public-url ./",
   },
   "keywords": [
     "js",
