@@ -1,5 +1,9 @@
 import ValidationError from './ValidationError';
 
+const swapASCII = (beginCode, currentCode) => {
+  return ((currentCode + 13 - beginCode) % 26) + beginCode;
+};
+
 const caesar13 = text => {
   if (typeof text !== 'string') {
     throw new ValidationError('Input is not a string!');
