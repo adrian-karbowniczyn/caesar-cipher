@@ -53,3 +53,9 @@ test('It should encrypt back what was decrypted', () => {
   const result = caesar13(word);
   expect(result).toBe('PRZEPROGRAMOWANI');
 });
+
+test('Should swap the whole alphabet', () => {
+  const alphabet = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz';
+  const result = caesar13(alphabet);
+  expect(result).toBe('NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm');
+});
