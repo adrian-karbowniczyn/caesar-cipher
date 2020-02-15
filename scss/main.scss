@@ -137,3 +137,37 @@ input:focus {
     }
   }
 }
+
+@media (max-width: 414px) {
+  .papirus-bg {
+    width: 1100px;
+  }
+  .header__title {
+    font-size: 4rem;
+  }
+
+  .cryptography-form {
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+
+    &__input,
+    &__submit {
+      font-size: 2rem;
+    }
+
+    &__input {
+      width: 82vw;
+    }
+    &__submit {
+      width: 50vw;
+    }
+  }
+
+  .cryptography-output {
+    &__encrypted-message,
+    &__error-message {
+      font-size: 2rem;
+    }
+  }
+}
