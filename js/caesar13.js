@@ -4,6 +4,10 @@ const swapASCII = (beginCode, currentCode) => {
   return ((currentCode + 13 - beginCode) % 26) + beginCode;
 };
 
+const isInBetween = (begin, number, end) => {
+  return number >= begin && number <= end;
+};
+
 const caesar13 = text => {
   if (typeof text !== 'string') {
     throw new ValidationError('Input is not a string!');
