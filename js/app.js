@@ -4,3 +4,9 @@ const submitButton = document.querySelector('.cryptography-form__submit');
 const textInput = document.querySelector('.cryptography-form__input');
 const outputMessage = document.querySelector('.cryptography-output__encrypted-message');
 const errorMessage = document.querySelector('.cryptography-output__error-message');
+
+submitButton.addEventListener('click', event => {
+  event.preventDefault();
+  outputMessage.textContent = '';
+  errorMessage.textContent = '';
+});
