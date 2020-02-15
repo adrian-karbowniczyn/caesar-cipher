@@ -46,3 +46,10 @@ test('Special characters should not to change', () => {
 
   expect(result).toBe('C4MRC40TE@Z0J@A1');
 });
+
+test('It should encrypt back what was decrypted', () => {
+  const word = 'CEMRCEBTENZBJNAV';
+
+  const result = caesar13(word);
+  expect(result).toBe('PRZEPROGRAMOWANI');
+});
