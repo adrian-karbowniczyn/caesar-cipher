@@ -17,6 +17,11 @@ body {
   overflow: hidden;
 }
 
+.wrapper {
+  z-index: 1;
+}
+
+
 .header__title {
   font-size: 5rem;
   text-align: center;
